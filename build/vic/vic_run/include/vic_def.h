@@ -62,7 +62,7 @@
 #define MAX_VEG         12     /**< maximum number of vegetation types per cell */
 #define MAX_LAYERS      3      /**< maximum number of soil moisture layers */
 #define MAX_NODES       50     /**< maximum number of soil thermal nodes */
-#define MAX_BANDS       10     /**< maximum number of snow bands */
+#define MAX_BANDS       75     /**< maximum number of snow bands */
 #define MAX_FRONTS      3      /**< maximum number of freezing and thawing front depths to store */
 #define MAX_FROST_AREAS 10     /**< maximum number of frost sub-areas */
 #define MAX_LAKE_NODES  20     /**< maximum number of lake thermal nodes */
