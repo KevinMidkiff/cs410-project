@@ -1,0 +1,6 @@
+[submodule "VIC"]
+	path = VIC
+	url = git@github.com:UW-Hydro/VIC.git
+[submodule "VIC_sample_data"]
+	path = VIC_sample_data
+	url = git@github.com:UW-Hydro/VIC_sample_data.git
