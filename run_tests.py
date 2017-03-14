@@ -1,6 +1,9 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 """Python script for executing tests on the VIC modeling tool.
 """
 
+from __future__ import print_function
 import argparse
 import os
 import json
@@ -10,6 +13,7 @@ import sys
 import csv
 from statistics import mean, variance, stdev
 import signal
+
 
 # PID of the VIC process (if running, None if it is not)
 PID = None
@@ -33,7 +37,8 @@ def print_progress_bar(iteration, total, prefix='', suffix='', decimals=1, lengt
     percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
     filledLength = int(length * iteration // total)
     bar = fill * filledLength + '-' * (length - filledLength)
-    print('\r%s |%s| %s%% %s' % (prefix, bar, percent, suffix), end = '\r')
+    sys.stdout.flush()
+    sys.stdout.write('\r%s |%s| %s%% %s' % (prefix, bar, percent, suffix)) # end = '\r')
     # Print New Line on Complete
     if iteration == total:
         print()
