@@ -1,0 +1,17 @@
+VIC Driver  : Classic
+VIC Version : 5.0.1 February 1, 2017
+VIC Git Tag : unset
+Compiled    : by unset on unset (LINUX) Mar 14 2017 16:37:56
+Compiler    : gcc
+ version    : 5.4.0
+
+  Variable Infiltration Capacity (VIC) macroscale hydrologic
+  model version 5.0.1, Copyright (C) 2016 Computational
+  Hydrology Group, Dept. of Civil and Environmental Engineering,
+  University of Washington.  VIC comes with ABSOLUTELY NO
+  WARRANTY. This is free software, you may redistribute it
+  under certain conditions; see LICENSE.txt for details.
+
+  Report Bugs and Issues to : https://github.com/UW-Hydro/VIC/issues
+  VIC Users Email Listserve : vic_users@u.washington.edu 
+

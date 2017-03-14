@@ -1,0 +1,743 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 33.33      0.10     0.10    92880     0.00     0.00  surface_fluxes
+ 10.00      0.13     0.03   878095     0.00     0.00  SnowPackEnergyBalance
+  6.67      0.15     0.02   881285     0.00     0.00  latent_heat_from_snow
+  6.67      0.17     0.02    92880     0.00     0.00  calc_surf_energy_bal
+  6.67      0.19     0.02    92880     0.00     0.00  solve_snow
+  6.67      0.21     0.02       16     1.25     1.88  put_data
+  3.33      0.22     0.01  1302897     0.00     0.00  calc_sensible_heat
+  3.33      0.23     0.01  1152972     0.00     0.00  svp
+  3.33      0.24     0.01   972895     0.00     0.00  StabilityCorrection
+  3.33      0.25     0.01   375193     0.00     0.00  func_canopy_energy_bal
+  3.33      0.26     0.01   179365     0.00     0.00  CalcSnowPackEnergyBalance
+  3.33      0.27     0.01   132904     0.00     0.00  root_brent
+  3.33      0.28     0.01    92880     0.00     0.00  func_surf_energy_bal
+  3.33      0.29     0.01     3856     0.00     0.00  zero_output_list
+  3.33      0.30     0.01                             alloc_veg_hist
+  0.00      0.30     0.00  1346555     0.00     0.00  calc_outgoing_longwave
+  0.00      0.30     0.00  1056739     0.00     0.00  calc_latent_heat_of_sublimation
+  0.00      0.30     0.00   390500     0.00     0.00  calc_latent_heat_of_vaporization
+  0.00      0.30     0.00   297620     0.00     0.00  calc_scale_height
+  0.00      0.30     0.00   297620     0.00     0.00  penman
+  0.00      0.30     0.00   297620     0.00     0.00  svp_slope
+  0.00      0.30     0.00   278640     0.00     0.00  soil_conductivity
+  0.00      0.30     0.00   204740     0.00     0.00  calc_rc
+  0.00      0.30     0.00   108847     0.00     0.00  canopy_evap
+  0.00      0.30     0.00    93267     0.00     0.00  collect_wb_terms
+  0.00      0.30     0.00    93267     0.00     0.00  compute_runoff_and_asat
+  0.00      0.30     0.00    93267     0.00     0.00  estimate_layer_ice_content_quick_flux
+  0.00      0.30     0.00    93267     0.00     0.00  estimate_layer_temperature_quick_flux
+  0.00      0.30     0.00    93267     0.00     0.00  wrap_compute_zwt
+  0.00      0.30     0.00    92912     0.00     0.00  free_2d_double
+  0.00      0.30     0.00    92912     0.00     0.00  free_3d_double
+  0.00      0.30     0.00    92912     0.00     0.00  malloc_2d_double
+  0.00      0.30     0.00    92912     0.00     0.00  malloc_3d_double
+  0.00      0.30     0.00    92880     0.00     0.00  calc_layer_average_thermal_props
+  0.00      0.30     0.00    92880     0.00     0.00  calc_rainonly
+  0.00      0.30     0.00    92880     0.00     0.00  compute_pot_evap
+  0.00      0.30     0.00    92880     0.00     0.00  compute_soil_layer_thermal_properties
+  0.00      0.30     0.00    92880     0.00     0.00  estimate_T1
+  0.00      0.30     0.00    92880     0.00     0.00  runoff
+  0.00      0.30     0.00    92880     0.00     0.00  solve_surf_energy_bal
+  0.00      0.30     0.00    91341     0.00     0.00  snow_melt
+  0.00      0.30     0.00    88151     0.00     0.00  snow_density
+  0.00      0.30     0.00    75348     0.00     0.00  solve_canopy_energy_bal
+  0.00      0.30     0.00    49076     0.00     0.00  new_snow_density
+  0.00      0.30     0.00    44880     0.00     0.00  calc_atmos_energy_bal
+  0.00      0.30     0.00    44880     0.00     0.00  func_atmos_energy_bal
+  0.00      0.30     0.00    44880     0.00     0.00  snow_intercept
+  0.00      0.30     0.00    44880     0.00     0.00  solve_atmos_energy_bal
+  0.00      0.30     0.00    42481     0.00     0.00  snow_albedo
+  0.00      0.30     0.00    25440     0.00     0.00  CalcAerodynamic
+  0.00      0.30     0.00    23520     0.00     0.00  calc_veg_height
+  0.00      0.30     0.00    23520     0.00     0.00  prepare_full_energy
+  0.00      0.30     0.00     7680     0.00     0.00  dmy_equal
+  0.00      0.30     0.00     7680     0.00     0.00  raise_alarm
+  0.00      0.30     0.00     3840     0.00     0.00  air_density
+  0.00      0.30     0.00     3840     0.00     0.00  will_it_snow
+  0.00      0.30     0.00     1920     0.00     0.00  calc_veg_displacement
+  0.00      0.30     0.00     1165     0.00     0.00  transpiration
+  0.00      0.30     0.00      549     0.00     0.00  linear_interp
+  0.00      0.30     0.00      436     0.00     0.00  dmy_julian_day
+  0.00      0.30     0.00      436     0.00     0.00  num2date
+  0.00      0.30     0.00      240     0.00     0.00  dt_seconds_to_time_units
+  0.00      0.30     0.00      199     0.00     0.00  date2num
+  0.00      0.30     0.00      199     0.00     0.00  julian_day_from_dmy
+  0.00      0.30     0.00      196     0.00     0.00  time_delta
+  0.00      0.30     0.00      176     0.00     0.00  get_dist
+  0.00      0.30     0.00      160     0.00     0.00  reset_alarm
+  0.00      0.30     0.00      160     0.00     0.00  reset_stream
+  0.00      0.30     0.00      160     0.00     0.00  write_data
+  0.00      0.30     0.00       36     0.00     0.00  open_file
+  0.00      0.30     0.00       20     0.00     0.00  set_output_var
+  0.00      0.30     0.00       20     0.00     0.00  str_to_agg_type
+  0.00      0.30     0.00       20     0.00     0.00  str_to_ascii_format
+  0.00      0.30     0.00       20     0.00     0.00  str_to_out_mult
+  0.00      0.30     0.00       20     0.00     0.00  str_to_out_type
+  0.00      0.30     0.00       16     0.00     0.00  compute_cell_area
+  0.00      0.30     0.00       16     0.00     0.00  compute_derived_state_vars
+  0.00      0.30     0.00       16     0.00     0.00  generate_default_state
+  0.00      0.30     0.00       16     0.00     0.00  initialize_energy
+  0.00      0.30     0.00       16     0.00     0.00  initialize_snow
+  0.00      0.30     0.00       16     0.00     0.00  initialize_soil
+  0.00      0.30     0.00       16     0.00     0.00  initialize_veg
+  0.00      0.30     0.00       16     0.00     0.00  make_cell_data
+  0.00      0.30     0.00       16     0.00     0.00  make_energy_bal
+  0.00      0.30     0.00       16     0.00     0.00  make_snow_data
+  0.00      0.30     0.00       16     0.00     0.00  make_veg_var
+  0.00      0.30     0.00       16     0.00     0.00  read_atmos_data
+  0.00      0.30     0.00       16     0.00     0.00  read_forcing_data
+  0.00      0.30     0.00       16     0.00     0.00  set_node_parameters
+  0.00      0.30     0.00       16     0.00     0.00  ttrim
+  0.00      0.30     0.00       16     0.00     0.00  write_header
+  0.00      0.30     0.00        8     0.00     0.00  get_force_type
+  0.00      0.30     0.00        5     0.00     0.00  str_to_bool
+  0.00      0.30     0.00        3     0.00     0.00  set_alarm
+  0.00      0.30     0.00        1     0.00     0.00  alloc_aggdata
+  0.00      0.30     0.00        1     0.00     0.00  count_force_vars
+  0.00      0.30     0.00        1     0.00     0.00  count_nstreams_nvars
+  0.00      0.30     0.00        1     0.00     0.00  display_current_settings
+  0.00      0.30     0.00        1     0.00     0.00  make_lastday
+  0.00      0.30     0.00        1     0.00     0.00  print_license
+  0.00      0.30     0.00        1     0.00     0.00  print_version
+  0.00      0.30     0.00        1     0.00     0.00  setup_stream
+  0.00      0.30     0.00        1     0.00     0.00  str_to_freq_flag
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 3.33% of 0.30 seconds
+
+index % time    self  children    called     name
+                0.10    0.16   92880/92880       vic_run [2]
+[1]     86.7    0.10    0.16   92880         surface_fluxes [1]
+                0.02    0.11   92880/92880       solve_snow [3]
+                0.02    0.01   92880/92880       calc_surf_energy_bal [7]
+                0.00    0.00   44880/44880       calc_atmos_energy_bal [22]
+                0.00    0.00   92880/92880       compute_pot_evap [46]
+                0.00    0.00   92880/92880       runoff [49]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     86.7    0.00    0.26                 vic_run [2]
+                0.10    0.16   92880/92880       surface_fluxes [1]
+                0.00    0.00   23520/23520       prepare_full_energy [55]
+                0.00    0.00   23520/23520       calc_veg_height [54]
+                0.00    0.00   23520/25440       CalcAerodynamic [53]
+-----------------------------------------------
+                0.02    0.11   92880/92880       surface_fluxes [1]
+[3]     42.8    0.02    0.11   92880         solve_snow [3]
+                0.00    0.08   91341/91341       snow_melt [5]
+                0.00    0.03   44880/44880       snow_intercept [8]
+                0.00    0.00   92880/92880       calc_rainonly [45]
+                0.00    0.00   92880/390500      calc_latent_heat_of_vaporization [28]
+                0.00    0.00   88151/88151       snow_density [50]
+                0.00    0.00   42481/42481       snow_albedo [52]
+                0.00    0.00    2872/49076       new_snow_density [51]
+-----------------------------------------------
+                0.00    0.02   44880/132904      snow_intercept [8]
+                0.01    0.05   88024/132904      snow_melt [5]
+[4]     26.8    0.01    0.07  132904         root_brent [4]
+                0.02    0.03  698730/878095      SnowPackEnergyBalance [6]
+                0.01    0.00  299845/375193      func_canopy_energy_bal [13]
+-----------------------------------------------
+                0.00    0.08   91341/91341       solve_snow [3]
+[5]     26.1    0.00    0.08   91341         snow_melt [5]
+                0.01    0.05   88024/132904      root_brent [4]
+                0.01    0.01  179365/179365      CalcSnowPackEnergyBalance [12]
+-----------------------------------------------
+                0.01    0.01  179365/878095      CalcSnowPackEnergyBalance [12]
+                0.02    0.03  698730/878095      root_brent [4]
+[6]     24.4    0.03    0.04  878095         SnowPackEnergyBalance [6]
+                0.02    0.01  878095/881285      latent_heat_from_snow [11]
+                0.01    0.00  878095/972895      StabilityCorrection [18]
+                0.01    0.00  878095/1302897     calc_sensible_heat [16]
+                0.00    0.00  878095/1346555     calc_outgoing_longwave [26]
+-----------------------------------------------
+                0.02    0.01   92880/92880       surface_fluxes [1]
+[7]     10.4    0.02    0.01   92880         calc_surf_energy_bal [7]
+                0.00    0.01   92880/92880       solve_surf_energy_bal [15]
+                0.00    0.00   92880/92880       calc_layer_average_thermal_props [44]
+-----------------------------------------------
+                0.00    0.03   44880/44880       solve_snow [3]
+[8]     10.1    0.00    0.03   44880         snow_intercept [8]
+                0.00    0.02   44880/132904      root_brent [4]
+                0.00    0.00   75348/75348       solve_canopy_energy_bal [21]
+-----------------------------------------------
+                0.02    0.01      16/16          initialize_save_data [10]
+[9]     10.0    0.02    0.01      16         put_data [9]
+                0.01    0.00    3856/3856        zero_output_list [19]
+                0.00    0.00   93267/93267       collect_wb_terms [35]
+-----------------------------------------------
+                                                 <spontaneous>
+[10]    10.0    0.00    0.03                 initialize_save_data [10]
+                0.02    0.01      16/16          put_data [9]
+-----------------------------------------------
+                0.00    0.00    3190/881285      func_surf_energy_bal [14]
+                0.02    0.01  878095/881285      SnowPackEnergyBalance [6]
+[11]     9.2    0.02    0.01  881285         latent_heat_from_snow [11]
+                0.01    0.00  881285/1152972     svp [17]
+                0.00    0.00  789228/1056739     calc_latent_heat_of_sublimation [27]
+-----------------------------------------------
+                0.01    0.01  179365/179365      snow_melt [5]
+[12]     8.3    0.01    0.01  179365         CalcSnowPackEnergyBalance [12]
+                0.01    0.01  179365/878095      SnowPackEnergyBalance [6]
+-----------------------------------------------
+                0.00    0.00   75348/375193      solve_canopy_energy_bal [21]
+                0.01    0.00  299845/375193      root_brent [4]
+[13]     5.1    0.01    0.01  375193         func_canopy_energy_bal [13]
+                0.00    0.00  375193/1302897     calc_sensible_heat [16]
+                0.00    0.00  267511/1152972     svp [17]
+                0.00    0.00  375193/1346555     calc_outgoing_longwave [26]
+                0.00    0.00  267511/1056739     calc_latent_heat_of_sublimation [27]
+                0.00    0.00  107682/108847      canopy_evap [34]
+-----------------------------------------------
+                0.01    0.00   92880/92880       solve_surf_energy_bal [15]
+[14]     3.7    0.01    0.00   92880         func_surf_energy_bal [14]
+                0.00    0.00   94800/972895      StabilityCorrection [18]
+                0.00    0.00    3190/881285      latent_heat_from_snow [11]
+                0.00    0.00    4729/1302897     calc_sensible_heat [16]
+                0.00    0.00   92880/92880       estimate_T1 [48]
+                0.00    0.00   92880/1346555     calc_outgoing_longwave [26]
+                0.00    0.00    1920/1920        calc_veg_displacement [60]
+                0.00    0.00    1920/25440       CalcAerodynamic [53]
+                0.00    0.00    1165/108847      canopy_evap [34]
+-----------------------------------------------
+                0.00    0.01   92880/92880       calc_surf_energy_bal [7]
+[15]     3.7    0.00    0.01   92880         solve_surf_energy_bal [15]
+                0.01    0.00   92880/92880       func_surf_energy_bal [14]
+-----------------------------------------------
+                0.00    0.00    4729/1302897     func_surf_energy_bal [14]
+                0.00    0.00   44880/1302897     func_atmos_energy_bal [23]
+                0.00    0.00  375193/1302897     func_canopy_energy_bal [13]
+                0.01    0.00  878095/1302897     SnowPackEnergyBalance [6]
+[16]     3.3    0.01    0.00 1302897         calc_sensible_heat [16]
+-----------------------------------------------
+                0.00    0.00    4176/1152972     vic_force [25]
+                0.00    0.00  267511/1152972     func_canopy_energy_bal [13]
+                0.01    0.00  881285/1152972     latent_heat_from_snow [11]
+[17]     3.3    0.01    0.00 1152972         svp [17]
+-----------------------------------------------
+                0.00    0.00   94800/972895      func_surf_energy_bal [14]
+                0.01    0.00  878095/972895      SnowPackEnergyBalance [6]
+[18]     3.3    0.01    0.00  972895         StabilityCorrection [18]
+-----------------------------------------------
+                0.01    0.00    3856/3856        put_data [9]
+[19]     3.3    0.01    0.00    3856         zero_output_list [19]
+-----------------------------------------------
+                                                 <spontaneous>
+[20]     3.3    0.01    0.00                 alloc_veg_hist [20]
+-----------------------------------------------
+                0.00    0.00   75348/75348       snow_intercept [8]
+[21]     1.0    0.00    0.00   75348         solve_canopy_energy_bal [21]
+                0.00    0.00   75348/375193      func_canopy_energy_bal [13]
+-----------------------------------------------
+                0.00    0.00   44880/44880       surface_fluxes [1]
+[22]     0.1    0.00    0.00   44880         calc_atmos_energy_bal [22]
+                0.00    0.00   44880/44880       solve_atmos_energy_bal [24]
+-----------------------------------------------
+                0.00    0.00   44880/44880       solve_atmos_energy_bal [24]
+[23]     0.1    0.00    0.00   44880         func_atmos_energy_bal [23]
+                0.00    0.00   44880/1302897     calc_sensible_heat [16]
+-----------------------------------------------
+                0.00    0.00   44880/44880       calc_atmos_energy_bal [22]
+[24]     0.1    0.00    0.00   44880         solve_atmos_energy_bal [24]
+                0.00    0.00   44880/44880       func_atmos_energy_bal [23]
+-----------------------------------------------
+                                                 <spontaneous>
+[25]     0.0    0.00    0.00                 vic_force [25]
+                0.00    0.00    4176/1152972     svp [17]
+                0.00    0.00    3840/3840        air_density [58]
+                0.00    0.00    3840/3840        will_it_snow [59]
+                0.00    0.00      16/16          read_forcing_data [91]
+-----------------------------------------------
+                0.00    0.00     387/1346555     generate_default_state [81]
+                0.00    0.00   92880/1346555     func_surf_energy_bal [14]
+                0.00    0.00  375193/1346555     func_canopy_energy_bal [13]
+                0.00    0.00  878095/1346555     SnowPackEnergyBalance [6]
+[26]     0.0    0.00    0.00 1346555         calc_outgoing_longwave [26]
+-----------------------------------------------
+                0.00    0.00  267511/1056739     func_canopy_energy_bal [13]
+                0.00    0.00  789228/1056739     latent_heat_from_snow [11]
+[27]     0.0    0.00    0.00 1056739         calc_latent_heat_of_sublimation [27]
+-----------------------------------------------
+                0.00    0.00   92880/390500      solve_snow [3]
+                0.00    0.00  297620/390500      penman [30]
+[28]     0.0    0.00    0.00  390500         calc_latent_heat_of_vaporization [28]
+-----------------------------------------------
+                0.00    0.00  297620/297620      penman [30]
+[29]     0.0    0.00    0.00  297620         calc_scale_height [29]
+-----------------------------------------------
+                0.00    0.00    3013/297620      transpiration [61]
+                0.00    0.00  108847/297620      canopy_evap [34]
+                0.00    0.00  185760/297620      compute_pot_evap [46]
+[30]     0.0    0.00    0.00  297620         penman [30]
+                0.00    0.00  297620/297620      svp_slope [31]
+                0.00    0.00  297620/297620      calc_scale_height [29]
+                0.00    0.00  297620/390500      calc_latent_heat_of_vaporization [28]
+-----------------------------------------------
+                0.00    0.00  297620/297620      penman [30]
+[31]     0.0    0.00    0.00  297620         svp_slope [31]
+-----------------------------------------------
+                0.00    0.00  278640/278640      compute_soil_layer_thermal_properties [47]
+[32]     0.0    0.00    0.00  278640         soil_conductivity [32]
+-----------------------------------------------
+                0.00    0.00    3013/204740      transpiration [61]
+                0.00    0.00   92880/204740      compute_pot_evap [46]
+                0.00    0.00  108847/204740      canopy_evap [34]
+[33]     0.0    0.00    0.00  204740         calc_rc [33]
+-----------------------------------------------
+                0.00    0.00    1165/108847      func_surf_energy_bal [14]
+                0.00    0.00  107682/108847      func_canopy_energy_bal [13]
+[34]     0.0    0.00    0.00  108847         canopy_evap [34]
+                0.00    0.00  108847/204740      calc_rc [33]
+                0.00    0.00  108847/297620      penman [30]
+                0.00    0.00    1165/1165        transpiration [61]
+-----------------------------------------------
+                0.00    0.00   93267/93267       put_data [9]
+[35]     0.0    0.00    0.00   93267         collect_wb_terms [35]
+-----------------------------------------------
+                0.00    0.00     387/93267       compute_derived_state_vars [80]
+                0.00    0.00   92880/93267       runoff [49]
+[36]     0.0    0.00    0.00   93267         compute_runoff_and_asat [36]
+-----------------------------------------------
+                0.00    0.00     387/93267       generate_default_state [81]
+                0.00    0.00   92880/93267       calc_layer_average_thermal_props [44]
+[37]     0.0    0.00    0.00   93267         estimate_layer_ice_content_quick_flux [37]
+-----------------------------------------------
+                0.00    0.00     387/93267       compute_derived_state_vars [80]
+                0.00    0.00   92880/93267       calc_layer_average_thermal_props [44]
+[38]     0.0    0.00    0.00   93267         estimate_layer_temperature_quick_flux [38]
+-----------------------------------------------
+                0.00    0.00     387/93267       compute_derived_state_vars [80]
+                0.00    0.00   92880/93267       runoff [49]
+[39]     0.0    0.00    0.00   93267         wrap_compute_zwt [39]
+-----------------------------------------------
+                0.00    0.00      16/92912       compute_derived_state_vars [80]
+                0.00    0.00      16/92912       generate_default_state [81]
+                0.00    0.00   92880/92912       calc_layer_average_thermal_props [44]
+[40]     0.0    0.00    0.00   92912         free_2d_double [40]
+-----------------------------------------------
+                0.00    0.00      16/92912       compute_derived_state_vars [80]
+                0.00    0.00      16/92912       generate_default_state [81]
+                0.00    0.00   92880/92912       calc_layer_average_thermal_props [44]
+[41]     0.0    0.00    0.00   92912         free_3d_double [41]
+-----------------------------------------------
+                0.00    0.00      16/92912       compute_derived_state_vars [80]
+                0.00    0.00      16/92912       generate_default_state [81]
+                0.00    0.00   92880/92912       calc_layer_average_thermal_props [44]
+[42]     0.0    0.00    0.00   92912         malloc_2d_double [42]
+-----------------------------------------------
+                0.00    0.00      16/92912       compute_derived_state_vars [80]
+                0.00    0.00      16/92912       generate_default_state [81]
+                0.00    0.00   92880/92912       calc_layer_average_thermal_props [44]
+[43]     0.0    0.00    0.00   92912         malloc_3d_double [43]
+-----------------------------------------------
+                0.00    0.00   92880/92880       calc_surf_energy_bal [7]
+[44]     0.0    0.00    0.00   92880         calc_layer_average_thermal_props [44]
+                0.00    0.00   92880/92912       malloc_3d_double [43]
+                0.00    0.00   92880/92912       malloc_2d_double [42]
+                0.00    0.00   92880/93267       estimate_layer_temperature_quick_flux [38]
+                0.00    0.00   92880/93267       estimate_layer_ice_content_quick_flux [37]
+                0.00    0.00   92880/92912       free_2d_double [40]
+                0.00    0.00   92880/92912       free_3d_double [41]
+-----------------------------------------------
+                0.00    0.00   92880/92880       solve_snow [3]
+[45]     0.0    0.00    0.00   92880         calc_rainonly [45]
+-----------------------------------------------
+                0.00    0.00   92880/92880       surface_fluxes [1]
+[46]     0.0    0.00    0.00   92880         compute_pot_evap [46]
+                0.00    0.00  185760/297620      penman [30]
+                0.00    0.00   92880/204740      calc_rc [33]
+-----------------------------------------------
+                0.00    0.00   92880/92880       prepare_full_energy [55]
+[47]     0.0    0.00    0.00   92880         compute_soil_layer_thermal_properties [47]
+                0.00    0.00  278640/278640      soil_conductivity [32]
+-----------------------------------------------
+                0.00    0.00   92880/92880       func_surf_energy_bal [14]
+[48]     0.0    0.00    0.00   92880         estimate_T1 [48]
+-----------------------------------------------
+                0.00    0.00   92880/92880       surface_fluxes [1]
+[49]     0.0    0.00    0.00   92880         runoff [49]
+                0.00    0.00   92880/93267       compute_runoff_and_asat [36]
+                0.00    0.00   92880/93267       wrap_compute_zwt [39]
+-----------------------------------------------
+                0.00    0.00   88151/88151       solve_snow [3]
+[50]     0.0    0.00    0.00   88151         snow_density [50]
+                0.00    0.00   46204/49076       new_snow_density [51]
+-----------------------------------------------
+                0.00    0.00    2872/49076       solve_snow [3]
+                0.00    0.00   46204/49076       snow_density [50]
+[51]     0.0    0.00    0.00   49076         new_snow_density [51]
+-----------------------------------------------
+                0.00    0.00   42481/42481       solve_snow [3]
+[52]     0.0    0.00    0.00   42481         snow_albedo [52]
+-----------------------------------------------
+                0.00    0.00    1920/25440       func_surf_energy_bal [14]
+                0.00    0.00   23520/25440       vic_run [2]
+[53]     0.0    0.00    0.00   25440         CalcAerodynamic [53]
+-----------------------------------------------
+                0.00    0.00   23520/23520       vic_run [2]
+[54]     0.0    0.00    0.00   23520         calc_veg_height [54]
+-----------------------------------------------
+                0.00    0.00   23520/23520       vic_run [2]
+[55]     0.0    0.00    0.00   23520         prepare_full_energy [55]
+                0.00    0.00   92880/92880       compute_soil_layer_thermal_properties [47]
+-----------------------------------------------
+                0.00    0.00    3840/7680        write_output [321]
+                0.00    0.00    3840/7680        agg_stream_data [120]
+[56]     0.0    0.00    0.00    7680         dmy_equal [56]
+-----------------------------------------------
+                0.00    0.00    3840/7680        write_output [321]
+                0.00    0.00    3840/7680        agg_stream_data [120]
+[57]     0.0    0.00    0.00    7680         raise_alarm [57]
+-----------------------------------------------
+                0.00    0.00    3840/3840        vic_force [25]
+[58]     0.0    0.00    0.00    3840         air_density [58]
+-----------------------------------------------
+                0.00    0.00    3840/3840        vic_force [25]
+[59]     0.0    0.00    0.00    3840         will_it_snow [59]
+-----------------------------------------------
+                0.00    0.00    1920/1920        func_surf_energy_bal [14]
+[60]     0.0    0.00    0.00    1920         calc_veg_displacement [60]
+-----------------------------------------------
+                0.00    0.00    1165/1165        canopy_evap [34]
+[61]     0.0    0.00    0.00    1165         transpiration [61]
+                0.00    0.00    3013/204740      calc_rc [33]
+                0.00    0.00    3013/297620      penman [30]
+-----------------------------------------------
+                0.00    0.00     549/549         calc_root_fractions [135]
+[62]     0.0    0.00    0.00     549         linear_interp [62]
+-----------------------------------------------
+                0.00    0.00      36/436         set_alarm [97]
+                0.00    0.00     160/436         reset_alarm [70]
+                0.00    0.00     240/436         make_dmy [231]
+[63]     0.0    0.00    0.00     436         dmy_julian_day [63]
+-----------------------------------------------
+                0.00    0.00      36/436         set_alarm [97]
+                0.00    0.00     160/436         reset_alarm [70]
+                0.00    0.00     240/436         make_dmy [231]
+[64]     0.0    0.00    0.00     436         num2date [64]
+-----------------------------------------------
+                0.00    0.00     240/240         make_dmy [231]
+[65]     0.0    0.00    0.00     240         dt_seconds_to_time_units [65]
+-----------------------------------------------
+                0.00    0.00       3/199         make_dmy [231]
+                0.00    0.00      36/199         set_alarm [97]
+                0.00    0.00     160/199         reset_alarm [70]
+[66]     0.0    0.00    0.00     199         date2num [66]
+                0.00    0.00     199/199         julian_day_from_dmy [67]
+-----------------------------------------------
+                0.00    0.00     199/199         date2num [66]
+[67]     0.0    0.00    0.00     199         julian_day_from_dmy [67]
+-----------------------------------------------
+                0.00    0.00      36/196         set_alarm [97]
+                0.00    0.00     160/196         reset_alarm [70]
+[68]     0.0    0.00    0.00     196         time_delta [68]
+-----------------------------------------------
+                0.00    0.00     176/176         compute_cell_area [79]
+[69]     0.0    0.00    0.00     176         get_dist [69]
+-----------------------------------------------
+                0.00    0.00     160/160         reset_stream [71]
+[70]     0.0    0.00    0.00     160         reset_alarm [70]
+                0.00    0.00     160/196         time_delta [68]
+                0.00    0.00     160/199         date2num [66]
+                0.00    0.00     160/436         dmy_julian_day [63]
+                0.00    0.00     160/436         num2date [64]
+-----------------------------------------------
+                0.00    0.00     160/160         write_output [321]
+[71]     0.0    0.00    0.00     160         reset_stream [71]
+                0.00    0.00     160/160         reset_alarm [70]
+-----------------------------------------------
+                0.00    0.00     160/160         write_output [321]
+[72]     0.0    0.00    0.00     160         write_data [72]
+-----------------------------------------------
+                0.00    0.00       4/36          check_files [142]
+                0.00    0.00      32/36          make_in_and_outfiles [232]
+[73]     0.0    0.00    0.00      36         open_file [73]
+-----------------------------------------------
+                0.00    0.00      20/20          parse_output_info [238]
+[74]     0.0    0.00    0.00      20         set_output_var [74]
+-----------------------------------------------
+                0.00    0.00      20/20          parse_output_info [238]
+[75]     0.0    0.00    0.00      20         str_to_agg_type [75]
+-----------------------------------------------
+                0.00    0.00      20/20          parse_output_info [238]
+[76]     0.0    0.00    0.00      20         str_to_ascii_format [76]
+-----------------------------------------------
+                0.00    0.00      20/20          parse_output_info [238]
+[77]     0.0    0.00    0.00      20         str_to_out_mult [77]
+-----------------------------------------------
+                0.00    0.00      20/20          parse_output_info [238]
+[78]     0.0    0.00    0.00      20         str_to_out_type [78]
+-----------------------------------------------
+                0.00    0.00      16/16          read_soilparam [273]
+[79]     0.0    0.00    0.00      16         compute_cell_area [79]
+                0.00    0.00     176/176         get_dist [69]
+-----------------------------------------------
+                0.00    0.00      16/16          vic_populate_model_state [314]
+[80]     0.0    0.00    0.00      16         compute_derived_state_vars [80]
+                0.00    0.00     387/93267       compute_runoff_and_asat [36]
+                0.00    0.00     387/93267       wrap_compute_zwt [39]
+                0.00    0.00     387/93267       estimate_layer_temperature_quick_flux [38]
+                0.00    0.00      16/92912       malloc_3d_double [43]
+                0.00    0.00      16/92912       malloc_2d_double [42]
+                0.00    0.00      16/16          set_node_parameters [92]
+                0.00    0.00      16/92912       free_3d_double [41]
+                0.00    0.00      16/92912       free_2d_double [40]
+-----------------------------------------------
+                0.00    0.00      16/16          vic_populate_model_state [314]
+[81]     0.0    0.00    0.00      16         generate_default_state [81]
+                0.00    0.00     387/1346555     calc_outgoing_longwave [26]
+                0.00    0.00     387/93267       estimate_layer_ice_content_quick_flux [37]
+                0.00    0.00      16/92912       malloc_3d_double [43]
+                0.00    0.00      16/92912       malloc_2d_double [42]
+                0.00    0.00      16/92912       free_2d_double [40]
+                0.00    0.00      16/92912       free_3d_double [41]
+-----------------------------------------------
+                0.00    0.00      16/16          vic_populate_model_state [314]
+[82]     0.0    0.00    0.00      16         initialize_energy [82]
+-----------------------------------------------
+                0.00    0.00      16/16          vic_populate_model_state [314]
+[83]     0.0    0.00    0.00      16         initialize_snow [83]
+-----------------------------------------------
+                0.00    0.00      16/16          vic_populate_model_state [314]
+[84]     0.0    0.00    0.00      16         initialize_soil [84]
+-----------------------------------------------
+                0.00    0.00      16/16          vic_populate_model_state [314]
+[85]     0.0    0.00    0.00      16         initialize_veg [85]
+-----------------------------------------------
+                0.00    0.00      16/16          make_all_vars [230]
+[86]     0.0    0.00    0.00      16         make_cell_data [86]
+-----------------------------------------------
+                0.00    0.00      16/16          make_all_vars [230]
+[87]     0.0    0.00    0.00      16         make_energy_bal [87]
+-----------------------------------------------
+                0.00    0.00      16/16          make_all_vars [230]
+[88]     0.0    0.00    0.00      16         make_snow_data [88]
+-----------------------------------------------
+                0.00    0.00      16/16          make_all_vars [230]
+[89]     0.0    0.00    0.00      16         make_veg_var [89]
+-----------------------------------------------
+                0.00    0.00      16/16          read_forcing_data [91]
+[90]     0.0    0.00    0.00      16         read_atmos_data [90]
+-----------------------------------------------
+                0.00    0.00      16/16          vic_force [25]
+[91]     0.0    0.00    0.00      16         read_forcing_data [91]
+                0.00    0.00      16/16          read_atmos_data [90]
+-----------------------------------------------
+                0.00    0.00      16/16          compute_derived_state_vars [80]
+[92]     0.0    0.00    0.00      16         set_node_parameters [92]
+-----------------------------------------------
+                0.00    0.00      16/16          read_soilparam [273]
+[93]     0.0    0.00    0.00      16         ttrim [93]
+-----------------------------------------------
+                0.00    0.00      16/16          make_in_and_outfiles [232]
+[94]     0.0    0.00    0.00      16         write_header [94]
+-----------------------------------------------
+                0.00    0.00       8/8           get_global_param [202]
+[95]     0.0    0.00    0.00       8         get_force_type [95]
+-----------------------------------------------
+                0.00    0.00       5/5           get_global_param [202]
+[96]     0.0    0.00    0.00       5         str_to_bool [96]
+-----------------------------------------------
+                0.00    0.00       1/3           parse_output_info [238]
+                0.00    0.00       2/3           setup_stream [105]
+[97]     0.0    0.00    0.00       3         set_alarm [97]
+                0.00    0.00      36/196         time_delta [68]
+                0.00    0.00      36/199         date2num [66]
+                0.00    0.00      36/436         dmy_julian_day [63]
+                0.00    0.00      36/436         num2date [64]
+-----------------------------------------------
+                0.00    0.00       1/1           parse_output_info [238]
+[98]     0.0    0.00    0.00       1         alloc_aggdata [98]
+-----------------------------------------------
+                0.00    0.00       1/1           get_global_param [202]
+[99]     0.0    0.00    0.00       1         count_force_vars [99]
+-----------------------------------------------
+                0.00    0.00       1/1           parse_output_info [238]
+[100]    0.0    0.00    0.00       1         count_nstreams_nvars [100]
+-----------------------------------------------
+                0.00    0.00       1/1           get_global_param [202]
+[101]    0.0    0.00    0.00       1         display_current_settings [101]
+                0.00    0.00       1/1           print_license [103]
+                0.00    0.00       1/1           print_version [104]
+-----------------------------------------------
+                0.00    0.00       1/1           get_global_param [202]
+[102]    0.0    0.00    0.00       1         make_lastday [102]
+-----------------------------------------------
+                0.00    0.00       1/1           display_current_settings [101]
+[103]    0.0    0.00    0.00       1         print_license [103]
+-----------------------------------------------
+                0.00    0.00       1/1           display_current_settings [101]
+[104]    0.0    0.00    0.00       1         print_version [104]
+-----------------------------------------------
+                0.00    0.00       1/1           parse_output_info [238]
+[105]    0.0    0.00    0.00       1         setup_stream [105]
+                0.00    0.00       2/3           set_alarm [97]
+-----------------------------------------------
+                0.00    0.00       1/1           parse_output_info [238]
+[106]    0.0    0.00    0.00       1         str_to_freq_flag [106]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [53] CalcAerodynamic        [38] estimate_layer_temperature_quick_flux [71] reset_stream
+  [12] CalcSnowPackEnergyBalance [40] free_2d_double       [4] root_brent
+   [6] SnowPackEnergyBalance  [41] free_3d_double         [49] runoff
+  [18] StabilityCorrection    [23] func_atmos_energy_bal  [97] set_alarm
+  [58] air_density            [13] func_canopy_energy_bal [92] set_node_parameters
+  [98] alloc_aggdata          [14] func_surf_energy_bal   [74] set_output_var
+  [20] alloc_veg_hist         [81] generate_default_state [105] setup_stream
+  [22] calc_atmos_energy_bal  [69] get_dist               [52] snow_albedo
+  [27] calc_latent_heat_of_sublimation [95] get_force_type [50] snow_density
+  [28] calc_latent_heat_of_vaporization [82] initialize_energy [8] snow_intercept
+  [44] calc_layer_average_thermal_props [83] initialize_snow [5] snow_melt
+  [26] calc_outgoing_longwave [84] initialize_soil        [32] soil_conductivity
+  [45] calc_rainonly          [85] initialize_veg         [24] solve_atmos_energy_bal
+  [33] calc_rc                [67] julian_day_from_dmy    [21] solve_canopy_energy_bal
+  [29] calc_scale_height      [11] latent_heat_from_snow   [3] solve_snow
+  [16] calc_sensible_heat     [62] linear_interp          [15] solve_surf_energy_bal
+   [7] calc_surf_energy_bal   [86] make_cell_data         [75] str_to_agg_type
+  [60] calc_veg_displacement  [87] make_energy_bal        [76] str_to_ascii_format
+  [54] calc_veg_height       [102] make_lastday           [96] str_to_bool
+  [34] canopy_evap            [88] make_snow_data        [106] str_to_freq_flag
+  [35] collect_wb_terms       [89] make_veg_var           [77] str_to_out_mult
+  [79] compute_cell_area      [42] malloc_2d_double       [78] str_to_out_type
+  [80] compute_derived_state_vars [43] malloc_3d_double    [1] surface_fluxes
+  [46] compute_pot_evap       [51] new_snow_density       [17] svp
+  [36] compute_runoff_and_asat [64] num2date              [31] svp_slope
+  [47] compute_soil_layer_thermal_properties [73] open_file [68] time_delta
+  [99] count_force_vars       [30] penman                 [61] transpiration
+ [100] count_nstreams_nvars   [55] prepare_full_energy    [93] ttrim
+  [66] date2num              [103] print_license          [59] will_it_snow
+ [101] display_current_settings [104] print_version       [39] wrap_compute_zwt
+  [56] dmy_equal               [9] put_data               [72] write_data
+  [63] dmy_julian_day         [57] raise_alarm            [94] write_header
+  [65] dt_seconds_to_time_units [90] read_atmos_data      [19] zero_output_list
+  [48] estimate_T1            [91] read_forcing_data
+  [37] estimate_layer_ice_content_quick_flux [70] reset_alarm
