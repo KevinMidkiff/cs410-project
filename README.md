@@ -2,6 +2,8 @@
 Intro to Performance CS410 Project
 
 ## Running Test Script
+>**NOTE:** This script must be ran with Python 3
+
 The script <code>run_test.py</code> is meant for running tests and gathering wall clock time on the execution of VIC over a specific data set. The script has the following command line arguments:
 
 ```sh
@@ -31,10 +33,10 @@ The JSON configuration file has given to this script has the following structure
 {
     "tests": [
         {
-            "name": <STRING>,
-            "working_dir": <STRING>
-            "global_params": <STRING>,
-            "vic_results_dir": <STRING>
+            "name": "<STRING>",
+            "working_dir": "<STRING>",
+            "global_params": "<STRING>",
+            "vic_results_dir": "<STRING>"
         },
     ]
 }
