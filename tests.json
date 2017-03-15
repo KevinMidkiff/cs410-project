@@ -1,0 +1,10 @@
+{
+    "tests": [
+        {
+            "name": "Stehekin",
+            "working_dir": "data/Stehekin/",
+            "global_params": "parameters/global_param.STEHE.txt",
+            "vic_results_dir": "results"
+        }
+    ]
+}
