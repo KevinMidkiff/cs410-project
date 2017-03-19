@@ -83,3 +83,8 @@ In this JSON file, <code>tests</code> is a list of objects with the structure sh
 - <code>working_dir</code> - Directory to execute the test from
 - <code>global_params</code> - Location from the <code>working_dir</code> directory of the VIC global parameters file
 - <code>vic_results_dir</code> - Results directory for VIC to verify exists, and to create if it does not
+
+## License
+This repo contains code from the VIC model source code, and is therefore subject to their licensing. For more information visit their documentation or GitHub repository linked below.
+- [VIC GitHub](https://github.com/UW-Hydro/VIC)
+- [VIC Documentation](http://vic.readthedocs.io/en/master/)
